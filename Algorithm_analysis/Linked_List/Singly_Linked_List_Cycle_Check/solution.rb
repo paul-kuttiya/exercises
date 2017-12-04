@@ -13,7 +13,20 @@ def cycle?(node)
   marker1 = node
   marker2 = node
 
-  # traverse lists
+  ## option1
+  # while marker2 != nil && marker2.next != nil
+  #   marker1 = marker1.next
+  #   marker2 = marker2.next
+
+  #   if marker1 == marker2
+  #     return true
+  #   end
+  # end
+
+  # false
+
+  ## option2
+  ## traverse lists
   loop do
     # marker1 move +1, marker2 move +2
     marker1 = marker1.next
