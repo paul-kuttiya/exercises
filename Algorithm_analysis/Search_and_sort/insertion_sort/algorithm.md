@@ -1,5 +1,5 @@
 # insertion sort
-iterate array starting from index 1 to last index, store the current value, then shift the values to the left of current iterated index until current value accordingly
+iterate array starting from index 1 to last index, store the current value, then shift the values to the left of current iterated index until current value sorted accordingly
 
 # implementation  
 * iterate array starting from index 1 to last index  

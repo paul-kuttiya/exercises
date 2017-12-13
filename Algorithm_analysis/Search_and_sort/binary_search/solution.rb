@@ -50,6 +50,7 @@ def binary_search_rec(array, search)
 end
 
 a = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+p binary_search(a, -1)
 p binary_search(a, 6) == 6 # true
 p binary_search(a, 55) == nil # true
 p binary_search_rec(a, 6) == 6 #true

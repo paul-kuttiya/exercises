@@ -7,7 +7,7 @@ def merge_sort(arr)
 
   # recursively break down array with mid point to one element
   left = merge_sort(arr[0...mid]) # eg: [1]
-  right = merge_sort(arr[mid..arr.length]) # eg: [3]
+  right = merge_sort(arr[mid...arr.length]) # eg: [3]
 
   # set index to compare break down array with original array
   i = j = k = 0

@@ -12,7 +12,7 @@ def target_node(head, n)
   right = head
   
   # set right forward at position n from starting point
-  (n-1).times do 
+  (n).times do 
     if right.next == nil
       raise Exception, "Node lists size is smaller than n"
     end
@@ -22,13 +22,13 @@ def target_node(head, n)
 
   # traverse right to the last node; 
   # check for right_pointer next_node is nil
-  while right.next
+  while right
     # increment each pointer
     right = right.next
     left = left.next
   end
 
-  # when right hits last node, left will eq nth position  
+  # when right hits tail, left will eq nth position  
   left
 end
 
@@ -43,4 +43,4 @@ b.next = c
 c.next = d
 d.next = e
 
-p target_node(a, 2)
+p target_node(a, 2).value

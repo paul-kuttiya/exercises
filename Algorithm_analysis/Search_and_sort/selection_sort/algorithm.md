@@ -1,5 +1,5 @@
 # selection sort
-* sort by scan the whole array to find the minimum, then swapped minimum with current iterate index  
+* sort by scan the whole array to find the minimum, then swapped minimum with current iterated index  
 
 # implementation  
 * set outer loop from index 0 to (n-1); n-1 is the last index which will be the largest anyway when swapped from the inner loop  

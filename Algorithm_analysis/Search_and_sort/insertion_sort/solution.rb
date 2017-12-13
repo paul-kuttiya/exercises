@@ -3,7 +3,7 @@ def insertion_sort(arr)
     temp = arr[i]
     position = i
 
-    # keep checking hit the first element yet and previous value is greater than temp
+    # keep checking hit the first element yet, and previous value is greater than temp
     while position > 0 && arr[position-1] > temp
       # shift the value from the left to current index if previous is greater
       arr[position] = arr[position-1]
@@ -13,7 +13,7 @@ def insertion_sort(arr)
 
     # break inner while loop, position will equal where temp should be index at
     arr[position] = temp
-    position
+    # position
   end
 
   arr

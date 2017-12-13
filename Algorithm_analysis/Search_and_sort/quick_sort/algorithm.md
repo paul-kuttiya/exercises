@@ -1,0 +1,2 @@
+# Quick sort
+pick up a pivot, from the last element, then split array into left and right; less than pivot and greater than pivot, and recursion with quick(left) + pivot + quick(right), will keep recursion until each become single element and sorted. 

@@ -14,35 +14,35 @@ def cycle?(node)
   marker2 = node
 
   ## option1
-  # while marker2 != nil && marker2.next != nil
-  #   marker1 = marker1.next
-  #   marker2 = marker2.next
-
-  #   if marker1 == marker2
-  #     return true
-  #   end
-  # end
-
-  # false
-
-  ## option2
-  ## traverse lists
-  loop do
-    # marker1 move +1, marker2 move +2
+  while marker2 != nil && marker2.next != nil
     marker1 = marker1.next
     marker2 = marker2.next.next
-    
-    # if circular both marker will match
+
     if marker1 == marker2
       return true
     end
-    
-    # check even lists; when marker2 almost last node, marker2.next.next, which is now marker2 will eq tail(nil)
-    # check odd lists; when marker2 is lastnode; marker2.next, will eq tail(nil)
-    if marker2 == nil || marker2.next == nil
-      return false
-    end
   end
+
+  false
+
+  ## option2
+  ## traverse lists
+  # loop do
+  #   # marker1 move +1, marker2 move +2
+  #   marker1 = marker1.next
+  #   marker2 = marker2.next.next
+    
+  #   # if circular both marker will match
+  #   if marker1 == marker2
+  #     return true
+  #   end
+    
+  #   # check even lists; when marker2 almost last node, marker2.next.next, which is now marker2 will eq tail(nil)
+  #   # check odd lists; when marker2 is lastnode; marker2.next, will eq tail(nil)
+  #   if marker2 == nil || marker2.next == nil
+  #     return false
+  #   end
+  # end
 end
 
 a = Node.new(1)
